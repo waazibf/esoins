@@ -18,7 +18,7 @@
       </div>
       <div class="col-auto">
         <div class="d-flex align-items-center">
-          <a href="{{ route('esoins.ordonnance') }}" class="btn btn-outline-primary btn-sm" style="font-weight: 600;"><span class="fas fa-plus me-2"></span>Saisie ordonnance</a>
+          {{-- <a href="{{ route('esoins.ordonnance') }}" class="btn btn-outline-primary btn-sm" style="font-weight: 600;"><span class="fas fa-plus me-2"></span>Saisie ordonnance</a> --}}
           <button class="btn btn-outline-secondary ms-2" type="button" data-bs-toggle="modal" data-bs-target="#addOrdonnance"><span class="fas fa-plus me-2"></span> Saisie ordonnance</button>
         </div>
       </div>
