@@ -79,7 +79,7 @@
                                           </td>
                                           <td class="product align-middle ps-4"><a class="fw-semi-bold line-clamp-3 mb-0" href="#!">{{ $nproduct->name }}</a></td>
                                           <td class="price align-middle white-space-nowrap text-end fw-bold text-700 ps-4">
-                                            <input class="form-control @error('quantity') is-invalid @enderror form-control-sm" id="quantity{{ $nproduct->id }}" name="quantity{{ $nproduct->id }}" type="number" value="{{ old('quantity') ? old('quantity') : 0 }}" style="width: 5rem;" disabled onclick="setPrice({{ $nproduct->id }});" onkeyup="setPrice({{ $nproduct->id }});" />
+                                            <input class="form-control @error('quantity') is-invalid @enderror form-control-sm" id="quantity{{ $nproduct->id }}" name="quantity{{ $nproduct->id }}" type="number" min="0" value="{{ old('quantity') ? old('quantity') : 0 }}" style="width: 5rem;" disabled onclick="setPrice({{ $nproduct->id }});" onkeyup="setPrice({{ $nproduct->id }});" />
                                             @error('quantity')
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
